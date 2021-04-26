@@ -1,6 +1,7 @@
 package storage
 
 // modify是对基础存储单元的单个alter
+
 type Modify struct {
 	Data interface{}
 }

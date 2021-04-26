@@ -9,8 +9,8 @@ import (
 	"miniLinkDB/proto/pkg/kvrpcpb"
 )
 
-
 // MemStorage used test memory storage engine,data not write to disk, not sent to disk
+
 type MemStorage struct {
 	CfDefault *llrb.LLRB
 	CfLock	  *llrb.LLRB

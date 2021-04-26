@@ -1,8 +1,8 @@
 package standalone_storage
 
 import (
-	"github.com/pingcap-incubator/tinykv/kv/config"
-	"github.com/pingcap-incubator/tinykv/kv/storage"
+	"miniLinkDB/kv/config"
+	"miniLinkDB/kv/storage"
 	"miniLinkDB/proto/pkg/kvrpcpb"
 )
 

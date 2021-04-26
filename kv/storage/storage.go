@@ -6,6 +6,7 @@ import (
 )
 
 // Storage 代表 LinkDB的面向内部的服务器部分 处理来自其它服务器的发送和接收
+
 type Storage interface {
 	Start() error
 	Stop() error
