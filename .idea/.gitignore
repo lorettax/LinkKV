@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../miniLinkDB\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../../../:\Users\data\go\miniLinkDB\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
