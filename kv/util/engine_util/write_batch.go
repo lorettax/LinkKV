@@ -3,7 +3,7 @@ package engine_util
 import (
 	"github.com/Connor1996/badger"
 	"github.com/golang/protobuf/proto"
-	"github.com/pkg/errors"
+	"miniLinkDB/errors"
 )
 
 type WriteBatch struct {
@@ -22,7 +22,7 @@ const (
 
 var CFs [3]string = [3]string{CfDefault, CfWrite, CfLock}
 
-func (wb *WriteBatch) len() int {
+func (wb *WriteBatch) Len() int {
 	return len(wb.entries)
 }
 
@@ -48,7 +48,7 @@ func (wb *WriteBatch) DeleteCF(cf string, key []byte) {
 	wb.size += len(key)
 }
 
-func (sb *WriteBatch) SetMeta(key []byte, msg proto.Message) error {
+func (wb *WriteBatch) SetMeta(key []byte, msg proto.Message) error {
 	val, err := proto.Marshal(msg)
 	if err != nil {
 		return errors.WithStack(err)
